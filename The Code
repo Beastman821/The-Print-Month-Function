@@ -1,0 +1,79 @@
+/* 
+Luke Ellis
+The Print Month Function
+*/
+#include <iostream>
+#include <string>
+#include <iomanip>
+
+using namespace std;
+
+void printmonth(const int month, const int startday, const bool leap);
+
+ 
+
+ 
+
+int main(void)
+
+{
+
+  // ******************************************************************
+
+  // * Print just a bunch of Random months - Assignment #3            *
+
+  // ******************************************************************
+
+ 
+
+  printmonth(1,0,false);   // Print January 1st, on a Sunday
+
+  printmonth(2,1,true);    // Print February 1st leap year, starts Monday
+
+  printmonth(1,2,false);   // Print January 1st, on a Tuesday
+
+  printmonth(2,3,false); // Print February 1st not leap year, starts Wednesday
+
+  printmonth(1,4,false);   // Print January 1st, on a Thursday
+
+  printmonth(2,5,false);   // Print February 1st, on a Friday
+
+  printmonth(1,6,false);   // Print January 1st, on a Saturday
+
+  printmonth(6,1,false);   // Print June 1st, on Monday
+
+  printmonth(12,4,false);  // Print December 12th, on a Thursday
+
+ 
+
+return 0;
+
+}
+
+// ************************************************************
+
+void print_month(int month)
+{
+    const string month_name[13] = { "nothing",
+       "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" } ;
+    if( month>0 && month<13 ) cout << month_name[month] << '\n' ;
+    else cerr << "month number " << month << " is invalid\n" ;
+}
+
+void printday(int day)
+{
+	
+	
+	
+}
+
+void print_month_and_day( int month, int day)
+{
+	
+}
+
+          
+
+// *****************************************************************
+
+ 
